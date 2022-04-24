@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "composite": true,
+    "tsBuildInfoFile": "./build",
+    "target": "es2021",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@shared/*": ["shared/*"]
+    },
+
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "src/setupTests.ts",
+    "node_modules",
+    "obj",
+    "jest",
+    "**/*.spec.ts"
+  ],
+  "include": ["src", "src/**/*.ts", "@types/**/*.d.ts"]
+}

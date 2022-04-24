@@ -1,0 +1,2 @@
+export { GenerateJwtResponse } from '@modules/Auth/infrastructure/http/controllers/responses/generateJwt-response';
+export { VerifyJwtResponse } from '@modules/Auth/infrastructure/http/controllers/responses/verifyJwt-response';
